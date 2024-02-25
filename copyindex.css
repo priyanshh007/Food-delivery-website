@@ -1,0 +1,207 @@
+.header{
+    display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        width: 100%;
+        height: 100px;
+        
+    }
+    body
+    {
+        background-color: #ed838742;
+    }
+    .logo
+    {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        border-radius: 200px;
+    
+    }
+    .nav-items ul{
+        display: flex; 
+        font-size: 24px ;
+    }
+    .nav-items li
+    {
+    list-style-type: none;
+    padding: 10px;
+     margin: 10px;
+    }
+    
+    .serch{
+        padding: 10px;
+    }
+    
+    .res-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .res-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        width: 300px;
+        height: 400px;
+        padding: 5px;
+        margin: 5px;
+        object-fit: cover;
+    }
+    
+    .res-card:hover{
+        border: 0.01px solid black;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .res-logo{
+        height: 50%;
+        width: 95%;
+        object-fit: cover;
+        align-items: start;
+        margin-bottom: auto;
+       
+    }
+    .card-name {
+    padding-bottom: 40px;
+    text-align: center;
+    text-decoration: underline;
+    }
+    /* .card-name h3{
+        align-content: center;
+        justify-content: center;
+    } */
+    .card-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -18%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 95%;
+           
+    }
+    .cuisines
+    {
+        text-align: center;
+        width: 95%;
+        overflow: hidden;
+    }
+    
+    .card-name{
+        margin-top: -50px;
+        font-weight: 400;
+    }
+    .card-details h5{
+    
+        margin-top:-15px;
+        
+    
+    }
+    
+    .filter
+    {
+        margin: 20px;
+        height: 30px;
+        align-items: center;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    .filter-btn{
+        font-size: large;
+        height: 30px;
+        width: 30%;
+        cursor: pointer;
+    }
+    .login-btn{
+     margin-right: 2px;
+     padding: auto;
+     font-size: large;
+     cursor: pointer;
+    }
+    
+    .serch-btn{
+        font-size: large;
+        height: 30px;
+        width: 30%;
+        cursor: pointer;
+    }
+    .serch-box{
+        font-size: large;
+        height: 26px;
+        width: 60%;
+        cursor: pointer;
+    }
+    
+    /* menu */
+    .menu-cards
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        border: 1px solid black;
+    }
+    
+    .menu-cards:hover
+    {
+       cursor: pointer;
+       opacity: 50%;
+    }
+    
+    .menu-logo
+    {
+        height: 100%;
+        object-fit: cover;
+        align-items: start;
+        margin-bottom: auto;
+        
+    }
+    .menu-el-info
+    {
+        padding-bottom: 20px;
+        margin-top:-17px;
+        height: 60%;
+        width: 80%;
+        object-fit: cover;
+        
+        justify-content: space-between;
+    }
+    .menu-top-card
+    {
+        height: 40%;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        border: 1px solid black;
+        margin: auto;
+        
+    }
+    .menu-top-card-logo
+    {
+        height: 80%;
+    
+        object-fit: cover;
+        align-items: start;
+        margin-top: 10px;
+        padding: auto;
+        border-radius: 50%;
+        
+    }
+    .menuu
+    {
+        margin-top: 20px;
+    }
