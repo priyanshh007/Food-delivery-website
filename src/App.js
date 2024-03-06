@@ -11,6 +11,9 @@ import Error from "./Error";
 import Restromenu from "./components/Restromenu";
 import Profile from "./components/Profile";
 import Grocery from "./components/Grocery";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
+import Cart from "./components/Cart";
 
 
 
@@ -23,10 +26,13 @@ import Grocery from "./components/Grocery";
 
 
 const AppLayout= () =>{
-return(<div className="">
+return(
+  <Provider store={appStore}>
+  <div className="">
     <Header/>
     <Outlet/>
-    </div>)
+    </div>
+ </Provider>)
     }
 
 
@@ -62,6 +68,10 @@ const appRouter=createBrowserRouter([
             {
                 path:"/grocery",
                 element:<Suspense fallback={<h1>Loading...</h1>}><Grocery/></Suspense>
+            },
+            {
+                path:"/cart",
+                element:<Cart/>
             }
         ],
         errorElement:<Error/>

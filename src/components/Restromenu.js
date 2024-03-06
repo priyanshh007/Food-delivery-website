@@ -2,6 +2,9 @@ import React from "react";
 import useRestaurantMenu from "../utils/useRestaurantmenu";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { additem } from "../utils/CartSlice";
+
 
 const Restromenu = () => {
   const { resId } = useParams();
@@ -12,10 +15,10 @@ const Restromenu = () => {
   }
 
   const { name, cuisines, costForTwoMessage, avgRating, cloudinaryImageId } = resInfo?.cards[2]?.card?.card?.info;
+  const dispatch=useDispatch();
 
-  const addToCartHandler = (itemName) => {
-    // Implement your addToCart logic here
-    alert(`Added ${itemName} to cart!`);
+  const addToCartHandler = (item) => {
+    dispatch(additem(item));
   };
 
   return (
@@ -45,7 +48,7 @@ const Restromenu = () => {
                   <span className="text-lg font-bold">₹{item.card.info.price/100}</span>
                   <button
                     className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600"
-                    onClick={() => addToCartHandler(item.card.info.name)}
+                    onClick={() => addToCartHandler(item)}
                   >
                     Add to Cart
                   </button>
